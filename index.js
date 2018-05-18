@@ -1,3 +1,6 @@
+const config = require('./config')
+process.env = config(process.env)
+
 const express = require('express')
 const nunjucks = require('nunjucks')
 
